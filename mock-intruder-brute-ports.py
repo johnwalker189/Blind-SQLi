@@ -8,8 +8,9 @@ PREFIX_URL = 'http://localhost:'
 
 #for i in range(0, 65536):
 TARGET_URL = urllib.parse.quote(PREFIX_URL+str(8888))
+URL = ''
 #print(TARGET_URL)
-url = 'http://ssrf.cyberjutsu-lab.tech:9001/feature.php?url={}'.format(TARGET_URL)
+url = URL.format(TARGET_URL)
 r = requests.get(url)
 soup = BeautifulSoup(r.text, 'html.parser')
 img_tags = soup.find_all('img')

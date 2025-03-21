@@ -7,7 +7,7 @@ import sys
 #I will try to make this tool usable for any website that has a boolean-based SQLi vulnerability
 
 PREFIX_URL = ''
-BASE_URL = 'http://ssrf.cyberjutsu-lab.tech:9001/feature.php?url={target}'
+BASE_URL = ''
 wrong_indicator = 'Post not found'
 tables_amount = 0
 tables_length = []
